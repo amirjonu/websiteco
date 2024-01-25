@@ -1,11 +1,12 @@
 import React from "react";
-// import Moneys from "../components/CheckoutForm"
+import PricingPlans from "../components/PricingPlans";
+
+import "./Purchase.css";
 
 function Purchase() {
   return (
     <div className="purchase">
-      {/* <Moneys /> */}
-
+      <PricingPlans />
     </div>
   );
 }
