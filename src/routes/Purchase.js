@@ -1,12 +1,10 @@
 import React from "react";
-// import PricingPlans from "../components/PricingPlans";
 
 import "./Purchase.css";
 
 function Purchase() {
   return (
     <div className="purchase">
-      {/* <PricingPlans /> */}
       <div className="pricing-table">
         <div className="sweeping-only">
           <h2>Basic</h2>
@@ -67,7 +65,7 @@ function Purchase() {
               <br />1 week
             </li>
             <li>
-              <strong>$17</strong>
+              <strong>$18</strong>
               <br />
               One-time
             </li>

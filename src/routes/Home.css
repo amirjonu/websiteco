@@ -5,10 +5,11 @@
   letter-spacing: 2px;
   line-height: 1.2;
   text-align: center;
+  color: white;
 }
 .home {
   top: 80px;
-  background-image: url("https://i.postimg.cc/bYd7YYDF/background.jpg");
+  background-image: url("https://i.postimg.cc/ZKr30hkp/pexels-scott-webb-305821.jpg");
   margin-bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
