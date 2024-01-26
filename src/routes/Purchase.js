@@ -6,6 +6,7 @@ function Purchase() {
   return (
     <div className="purchase">
       <div className="pricing-table">
+        <div className="item">
         <div className="sweeping-only">
           <h2>Basic</h2>
           <br />
@@ -18,7 +19,7 @@ function Purchase() {
           <br />
           <ul>
             <li>
-              <strong>$85</strong>
+             <del className="old"><strong>$85</strong></del> <strong className="new">$25</strong>
               <br />1 month
             </li>
             <li>
@@ -43,6 +44,8 @@ function Purchase() {
           alt="man recycling"
           className="purchase-img"
         />
+        </div>
+        <div className="item">
         <div className="sweeping-trash">
           <h2>Deluxe</h2>
           <br />
@@ -57,7 +60,7 @@ function Purchase() {
           <br />
           <ul>
             <li>
-              <strong>$97</strong>
+            <del className="old"><strong>$97</strong></del> <strong className="new">$33</strong>
               <br />1 month
             </li>
             <li>
@@ -82,6 +85,9 @@ function Purchase() {
           alt="man recycling"
           className="purchase-img"
         />
+        </div>
+        <div className="item">
+
         <div className="heavy-stuff">
           <h2>Ultimate</h2>
           <br />
@@ -122,6 +128,7 @@ function Purchase() {
           alt="man recycling"
           className="purchase-img"
         />
+      </div>
       </div>
     </div>
   );

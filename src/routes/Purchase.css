@@ -1,83 +1,22 @@
-/* .purchase {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.pricing-plans {
-  font-size: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.pricing-plan {
-  text-align: center;
-  flex: 1;
-}
-
-.plan-name {
-  margin-bottom: 1rem;
-}
-
-.price1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.buy-now {
-  padding: 0.5rem 1rem;
-  background-color: gray;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.new-price {
-  margin-left: 5px;
-  color: red;
-  font-size: 1.5rem;
-}
-
-.price {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-} */
 .purchase {
   font-size: 17px;
   font-family: sans-serif;
   text-align: center;
+  height: 100%;
 }
 
 .pricing-table {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin-top: 50px;
 }
 
+.item{
+  display: flex;
+}
 .pricing-table div {
   border: 1px solid #ccc;
   padding: 20px;
-  width: 30%;
 }
 
 .pricing-table h2 {
@@ -119,4 +58,27 @@
   height: 460px;
   width: 180px;
   margin-right: 10px;
+}
+
+.old{
+  color: gray;
+}
+.new{
+  color: red;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .purchase-img {
+    height: 485px;
+    width: 180px;
+    margin-right: 10px;
+  }
+  .pricing-table{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .purchase{
+    overflow: hidden;
+  }
 }
