@@ -5,7 +5,8 @@ import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
-
+// https://github.com/briancodex/react-navbar-router-v6.4
+// Navbar and routing is from above link ^^^^
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -19,10 +20,18 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src="https://i.postimg.cc/BQx01tYM/logoo-removebg-preview.png" className="navbar-icon" alt="logo"/>
+              <img
+                src="https://i.postimg.cc/BQx01tYM/logoo-removebg-preview.png"
+                className="navbar-icon"
+                alt="logo"
+              />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
-              {click ? <FaTimes style={{ color: 'black' }} /> : <FaBars style={{ color: 'black' }}/>}
+              {click ? (
+                <FaTimes style={{ color: "black" }} />
+              ) : (
+                <FaBars style={{ color: "black" }} />
+              )}
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
@@ -38,24 +47,13 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/about"
+                  to="/appoitment"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  About
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Contact
+                  Appointment
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -71,13 +69,24 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/appoitment"
+                  to="/contact"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  Appointment
+                  Contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    "nav-links" + (isActive ? " activated" : "")
+                  }
+                  onClick={closeMobileMenu}
+                >
+                  About
                 </NavLink>
               </li>
             </ul>

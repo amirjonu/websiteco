@@ -1,4 +1,4 @@
-.purchase {
+/* .purchase {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,4 +61,62 @@
   color: gray;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+} */
+.purchase {
+  font-size: 17px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.pricing-table div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 30%;
+}
+
+.pricing-table h2 {
+  margin-top: 0;
+}
+
+.pricing-table p {
+  margin-bottom: 20px;
+}
+
+.pricing-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-table li {
+  margin-bottom: 10px;
+}
+
+.pricing-table button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.storyNotice {
+  font-size: 8px;
+}
+
+.purchase-img {
+  height: 460px;
+  width: 180px;
+  margin-right: 10px;
 }

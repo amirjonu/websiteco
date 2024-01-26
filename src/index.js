@@ -1,11 +1,7 @@
-import * as React from "react"; 
+import * as React from "react";
 import { createRoot } from "react-dom/client";
 
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import Navbar from "./components/Navbars";
 import "./App.css";
@@ -15,9 +11,10 @@ import Contact from "./routes/Contact";
 import Purchase from "./routes/Purchase";
 import Appointment from "./routes/Appoitment";
 import ErrorPage from "./routes/ErrorPage";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
-
+// https://github.com/briancodex/react-navbar-router-v6.4
+// Navbar and routing is from above link ^^^^
 
 const AppLayout = () => {
   return (
@@ -25,7 +22,7 @@ const AppLayout = () => {
       <Navbar />
       <Outlet />
       <Footer />
-    </>   
+    </>
   );
 };
 
@@ -39,26 +36,26 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "appoitment",
+        element: <Appointment />,
+      },
+
+      {
+        path: "purchase",
+        element: <Purchase />,
       },
       {
         path: "contact",
         element: <Contact />,
       },
       {
-        path: "purchase",
-        element: <Purchase />,
-      },
-      {
-        path: "appoitment",
-        element: <Appointment />,
+        path: "about",
+        element: <About />,
       },
     ],
   },
-
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );
