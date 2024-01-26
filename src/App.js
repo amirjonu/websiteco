@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { createRoot } from "react-dom/client";
 
-function App() {
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+import Navbar from "./components/Navbars";
+import "./App.css";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Contact from "./routes/Contact";
+import Purchase from "./routes/Purchase";
+import Appointment from "./routes/Appoitment";
+import ErrorPage from "./routes/ErrorPage";
+import Footer from "./components/Footer";
+
+// https://github.com/briancodex/react-navbar-router-v6.4
+// Navbar and routing is from above link ^^^^
+
+export default function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
   );
-}
+};
 
-export default App;
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "appoitment",
+        element: <Appointment />,
+      },
+
+      {
+        path: "purchase",
+        element: <Purchase />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+    ],
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />,
+);
