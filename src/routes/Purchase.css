@@ -8,7 +8,14 @@
 .pricing-table {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.sweeping-only,
+.sweeping-trash,
+.heavy-stuff{
+  width: 50%;
 }
 
 .item{
@@ -55,9 +62,8 @@
 }
 
 .purchase-img {
-  height: 460px;
+  height: 465px;
   width: 180px;
-  margin-right: 10px;
 }
 
 .old{
@@ -72,7 +78,6 @@
   .purchase-img {
     height: 485px;
     width: 180px;
-    margin-right: 10px;
   }
   .pricing-table{
     grid-template-columns: auto;

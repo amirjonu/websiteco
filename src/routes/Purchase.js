@@ -40,7 +40,7 @@ function Purchase() {
           </p>
         </div>
         <img
-          src="https://i.postimg.cc/kGKJjfJt/IMG-2925.jpg"
+          src="https://i.postimg.cc/d0RDr3JP/IMG-2925-1.png"
           alt="man recycling"
           className="purchase-img"
         />
@@ -81,7 +81,7 @@ function Purchase() {
           </p>
         </div>
         <img
-          src="https://i.postimg.cc/TwtKXkgL/IMG-2924.jpg"
+          src="https://i.postimg.cc/1XbyL1yr/IMG-2924-1.png"
           alt="man recycling"
           className="purchase-img"
         />
@@ -124,7 +124,7 @@ function Purchase() {
           </p>
         </div>{" "}
         <img
-          src="https://i.postimg.cc/gkpmzycN/IMG-2923.jpg"
+          src="https://i.postimg.cc/vBBMTZBv/IMG-2923-1.png"
           alt="man recycling"
           className="purchase-img"
         />
