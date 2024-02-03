@@ -9,6 +9,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Purchase from "./routes/Purchase";
+import Services from "./routes/Services";
 import Appointment from "./routes/Appoitment";
 import ErrorPage from "./routes/ErrorPage";
 import Footer from "./components/Footer";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "purchase",
         element: <Purchase />,
+      },
+      {
+        path: "services",
+        element: <Services />,
       },
       {
         path: "contact",

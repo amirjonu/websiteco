@@ -19,7 +19,7 @@ function Purchase() {
           <br />
           <ul>
             <li>
-             <del className="old"><strong>$85</strong></del> <strong className="new">$25</strong>
+             <strong>$85</strong>
               <br />1 month
             </li>
             <li>
@@ -60,7 +60,7 @@ function Purchase() {
           <br />
           <ul>
             <li>
-            <del className="old"><strong>$97</strong></del> <strong className="new">$33</strong>
+          <strong>$97</strong>
               <br />1 month
             </li>
             <li>
