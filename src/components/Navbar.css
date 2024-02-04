@@ -9,7 +9,6 @@ Navbar and routing is from above link ^^^^ */
 }
 
 .navbar {
-  background: white;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -22,11 +21,11 @@ Navbar and routing is from above link ^^^^ */
 }
 
 .navbar-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 170px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2px;
   background-color: white;
 }
 
@@ -34,10 +33,10 @@ Navbar and routing is from above link ^^^^ */
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 50px;
   padding-left: 50px;
+  padding-right: 50px;
+
+
 }
 
 .navbar-logo {
