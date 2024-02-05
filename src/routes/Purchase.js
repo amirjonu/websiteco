@@ -6,7 +6,7 @@ function Purchase() {
   return (
     <div className="purchase">
       <div className="pricing-table">
-        <div className="item">
+        <div className="itemp">
         <div className="sweeping-only">
           <h2>Basic</h2>
           <br />
@@ -45,7 +45,7 @@ function Purchase() {
           className="purchase-img"
         />
         </div>
-        <div className="item">
+        <div className="itemp">
         <div className="sweeping-trash">
           <h2>Deluxe</h2>
           <br />
@@ -86,7 +86,7 @@ function Purchase() {
           className="purchase-img"
         />
         </div>
-        <div className="item">
+        <div className="itemp">
 
         <div className="heavy-stuff">
           <h2>Ultimate</h2>

@@ -8,28 +8,28 @@ import "./Services.css";
 function Services() {
     const items = [
     <div>
-    <header>Step 1: What do you need?</header>
-    <p className="mini">We offer a variety of services including</p>
-    <ul className="listitems">
-    <li>
-        Trash takeout
-    </li>
-    <li>
-        Curbside Cleaning
-    </li>
-    <li>
-        Recycling
-    </li>
-    <li>
-        Sweeping
-    </li>
-    <li>
-        Moving Large Furniture
-    </li>
-    </ul>
+        <h1>Step 1: What do you need?</h1>
+        <p className="mini">We offer a variety of services including</p>
+        <ul className="listitems">
+        <li>
+            Trash takeout
+        </li>
+        <li>
+            Curbside Cleaning
+        </li>
+        <li>
+            Recycling
+        </li>
+        <li>
+            Sweeping
+        </li>
+        <li>
+            Moving Large Furniture
+        </li>
+        </ul>
     </div>
     , <div>
-        <header>Step 2: Why us?</header>
+        <h1>Step 2: Why us?</h1>
         <p className="mini">
             We do it better than anyone
         </p>
@@ -52,9 +52,9 @@ function Services() {
         </ul>
     </div>
     , <div>
-    <header>Step 3: Contact us?</header>
+    <h1>Step 3: Contact us?</h1>
     <p className="mini">
-        Contact <a className="links" href="/purchase">us</a> if you have any questions!
+        Contact <a className="links" href="/contact">us</a> if you have any questions!
     </p>
     <p className="mini">
         If you are interested please fill out this <a className="links" href="https://forms.gle/82TQUz19bW1U99kq8">form</a>!

@@ -16,14 +16,16 @@
 .sweeping-trash,
 .heavy-stuff{
   width: 50%;
+  border: 1px solid #ccc;
+
 }
 
-.item{
+.itemp{
   display: flex;
 }
 .pricing-table div {
-  border: 1px solid #ccc;
-  padding: 20px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
 }
 
 .pricing-table h2 {
@@ -62,8 +64,8 @@
 }
 
 .purchase-img {
-  height: 465px;
-  width: 180px;
+  height: 550px;
+  width: 220px;
 }
 
 .old{
@@ -76,7 +78,7 @@
 
 @media screen and (max-width: 1000px) {
   .purchase-img {
-    height: 485px;
+    height: 600px;
     width: 180px;
   }
   .pricing-table{

@@ -1,20 +1,23 @@
 body {
     overflow-x: hidden;
+
   }
   .services {
-    background-image: url("https://i.postimg.cc/c4zq8yx8/new-york.jpg");
+    background-image: url("https://i.postimg.cc/7LfjnCJx/nycimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10px;
     top: 70px;
-    font-family: sans-serif;
+    font-family: Georgia, serif;
     display: flex;
     flex-direction: column;
     margin-bottom: 80px;
+
   }
   
   .cards {
+    margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
     width: 47vw;
@@ -53,3 +56,18 @@ body {
 
   }
   
+
+  @media screen and (max-width: 450px) {
+    .mini, .listitems, .cards-text{
+      font-size: 17px;
+
+    }
+    .listitems{
+      margin-left: 10px;
+    }
+    .cards{
+      margin-top: 10px;
+      width: 56vw;
+      height: 62vh;
+    }
+  }
