@@ -14,7 +14,13 @@ const PUBLIC_KEY = "oGA_zp1BnFbZFEu9o";
 function Contact() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+    const form = e.target;
+    const formData = {
+      user_email: form.user_email.value,
+      user_name: form.user_name.value,
+      user_message: form.user_message.value,
+    };
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
         Swal.fire({
@@ -29,7 +35,7 @@ function Contact() {
           text: error.text,
         })
       });
-    e.target.reset()
+    e.target.reset();
   };
   return (
     <div className='contact'>
